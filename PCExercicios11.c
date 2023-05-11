@@ -24,7 +24,7 @@ int main(){
         MPI_Bcast(vetor, n, MPI_INT, 0, MPI_COMM_WORLD);
         MPI_Recv(&soma, 1, MPI_INT, 1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         MPI_Recv(&soma_dobro, 1, MPI_INT, 2, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        prinft("Soma: %d\n", soma);
+        printf("Soma: %d\n", soma);
         printf("Soma dobro: %d\n", soma_dobro);
     }
     if(rank == 1){
